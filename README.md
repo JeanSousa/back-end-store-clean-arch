@@ -72,3 +72,14 @@ Install dependencies with pip:
 pip install -r requirements.txt
 
 ```
+
+Run the project with uvicorn (not unicorn! LOL)
+
+```
+uvicorn main:app --reload
+
+```
+
+This way you can access the Swagger documentation and test it
+
+[Swagger](http://127.0.0.1:8000/docs)
