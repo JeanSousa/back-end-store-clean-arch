@@ -1,6 +1,13 @@
 # back-end-store-clean-arch
 Project example for Clean Arch
 
+### 🧠 Architeture
+
+- **Domain**: regras de negócio puras e independentes de frameworks
+- **Application**: casos de uso que orquestram o domínio
+- **Adapters**: interface com o mundo externo (HTTP/FastAPI)
+- **Infrastructure**: detalhes técnicos como banco de dados, logging e repositórios
+
 ### Structure:
 
 ```
