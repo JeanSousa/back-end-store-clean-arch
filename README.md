@@ -69,6 +69,6 @@ Activate venv:
 Install dependencies with pip:
 
 ```
-pip install
+pip install -r requirements.txt
 
 ```
