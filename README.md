@@ -1,7 +1,7 @@
 # back-end-store-clean-arch
 Project example for Clean Arch
 
-Structure:
+### Structure:
 
 ```
 .
@@ -37,5 +37,38 @@ Structure:
 ├── README.md                         # Documentação do projeto
 ├── requirements.txt                  # Dependências do projeto
 └── tests/                            # Testes unitários e de integração
+
+```
+
+### How to run the project:
+
+Create venv:
+
+```
+python -m venv venv
+
+# or your python version in linux
+
+python3 -m venv venv 
+
+```
+
+Activate venv:
+
+```
+# windows:
+
+.\venv\Scripts\activate.bat.
+
+# linux 
+
+ source venv/bin/activate   
+
+```
+
+Install dependencies with pip:
+
+```
+pip install
 
 ```
