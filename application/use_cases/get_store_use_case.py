@@ -1,8 +1,9 @@
-from domain.interfaces.stores_repository_interface import IStore
+from domain.interfaces.stores_repository_interface import IStoreRepository
+
 from isNullOrEmpty.is_null_or_empty import is_null_or_empty
 
 class GetStoreUseCase:
-    def __init__(self, repository: IStore):
+    def __init__(self, repository: IStoreRepository):
         self.repository = repository
 
     def execute(self, store_id: int):
