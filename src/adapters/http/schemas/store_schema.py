@@ -6,8 +6,8 @@ class StoreGetRequest(BaseModel):
     @field_validator("store_id")
     @classmethod
     def validate_store_id(cls, value: int):
-        if not value.is_integer():
-            raise ValueError("O campo store_id deve ser um inteiro")
+        if value <= 0:
+            raise ValueError("O campo store_id deve ser um inteiro maior que zero")
         return value
 
 

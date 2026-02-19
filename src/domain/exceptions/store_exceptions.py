@@ -1,0 +1,2 @@
+class StoreNotFoundError(Exception):
+    pass
