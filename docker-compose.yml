@@ -4,6 +4,11 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: back-end-stores
+    environment:
+      MONGO_URL: mongodb://mongousr:mongopwd@mongo:27017/?authSource=admin
+      MONGO_DB_NAME: back-end-stores-db
+    ports:
+      - 8001:8000
     depends_on:
       mongo:
         condition: service_healthy
